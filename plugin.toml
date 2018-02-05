@@ -1,0 +1,4 @@
+[plugin]
+description = "Change directory owner and permissions for dokku plugins and services on CIS-linux"
+version = "0.1.0"
+[plugin.config]

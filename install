@@ -7,5 +7,5 @@ chmod -R 755 $(find $PLUGIN_AVAILABLE_PATH/* -maxdepth 0 -type d)
 DOKKU_SERVICES_PATH="$DOKKU_LIB_ROOT/services"
 
 mkdir -p $DOKKU_SERVICES_PATH
-chown -R dokku:dokku $(find $DOKKU_SERVICES_PATH -maxdepth 0 -type d)
+chown dokku:dokku $(find $DOKKU_SERVICES_PATH -maxdepth 1 -type d)
 chmod -R 755 $(find $DOKKU_SERVICES_PATH -maxdepth 0 -type d)
